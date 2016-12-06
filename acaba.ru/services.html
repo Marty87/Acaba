@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Service</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <script src='js/device.min.js'></script>
+
+</head>
+<body>
+<div class="page">
+
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+  <header class="header">
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+        <div class="mobile-brand sm-visible">
+          <img src="images/mobile-logo.png" alt="img">
+        </div>
+          <div class="toggle-btn sm-visible">
+            <img src="images/toggle-menu-btn.png" alt="img">
+          </div>
+          <div class="mobile-menu">
+            <div class="mobile-menu-header">
+               <div class="toggle-btn toggle-close  sm-visible">
+                <img src="images/toggle-menu-btn.png" alt="img">
+              </div>
+              <div class="mob-logo">
+                <img src="images/menu-logo.png" alt="img">
+              </div>
+            </div>
+            <div class="mobile-menu-cnt">
+              <ul class="mobile-list">
+                <li class="mobile-list-item"><a href="#">Главная</a></li>
+                <li class="mobile-list-item">
+                  <a href="#">Услуги</a>
+                    <ul class="sub-list">
+                      <li class="sub-list-item"><a href="#">Консультация Логопеда</a></li>
+                      <li class="sub-list-item"><a href="#">Консультация Дефектолога</a></li>
+                      <li class="sub-list-item"><a href="#">Занятие с Логопедом</a></li>
+                      <li class="sub-list-item"><a href="#">Занятие с Дефектологом</a></li>
+                      <li class="sub-list-item"><a href="#">Нейропсихологическая коррекция</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-list-item"><a href="#">Проекты</a></li>
+                <li class="mobile-list-item"><a href="#">Партнеры</a></li>
+                <li class="mobile-list-item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 sm-hidden">
+            <div class="top-header-item">
+              <span class="icon icon1"></span><a href="#">Личный кабинет</a>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 col-lg-offset-2 col-md-offset-2 sm-hidden">
+            <div class="top-header-item">
+              <span class="icon icon2"></span><a href="#">Запись на прием</a>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 col-lg-offset-1 col-md-offset-1 sm-hidden">
+            <div class="top-header-item">
+               <div class="header-social social">
+                  <ul class="social-list">
+                     <li class="social-list__item"><a href="#" class="social-list__item--item icon1"></a></li>
+                     <li class="social-list__item"><a href="#" class="social-list__item--item icon2"></a></li>
+                     <li class="social-list__item"><a href="#" class="social-list__item--item icon3"></a></li>
+                   </ul>
+                </div>
+            </div>
+          </div>
+          <div class="mobile-personal sm-visible"><img src="images/personal-icon.png" alt="img"></div>
+           <div class="personal-menu">
+            <div class="mobile-menu-header">
+              <div class="mobile-personal-close sm-visible"><img src="images/personal-icon.png" alt="img"></div>
+            </div>
+            <div class="mobile-menu-cnt">
+              <ul class="mobile-list">
+                <li class="mobile-list-item"><a href="#">Кабинет</a></li>
+                <li class="mobile-list-item"><a href="#">Личные данные</a></li>
+                <li class="mobile-list-item"><a href="#">Талоны</a></li>
+                <li class="mobile-list-item"><a href="#">Мои услуги</a></li>
+                <li class="mobile-list-item"><a href="#">Мои обращения</a></li>
+                <li class="mobile-list-item"><a href="#">Выход</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+            <ul class="info offset-1">
+              <li class="info-item"><a href="callto:" class="info-item_link text">+7 (495) 252-04-26</a></li>
+              <li class="info-item"><a href="callto:" class="info-item_link">+7 (925) 556-04-26</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 pd-0">
+            <ul class="info">
+              <li class="info-item">Режим работы: </li>
+              <li class="info-item">вт-сб с 11:00-18:00</li>
+              <li class="info-item">пн, вс: выходной</li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 sm-hidden">
+            <div class="header__brand brand sm-hidden">
+              <a class="brand__name--link" href="#">
+                <img src="images/logo.png" alt="img">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
+            <ul class="info">
+              <li class="info-item"><address>Адрес: г. Москва, </address></li>
+              <li class="info-item"><address>ул. Клары Цеткин  </address></li>
+              <li class="info-item"><address>д. 29 корп.1 </address></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="btn-box">
+              <a href="#" class="btn btn-call">Заказать звонок</a>
+              <a href="#" class="btn btn-registr">Запись на прием</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <nav class="header__nav nav">
+        <ul class="sf-menu">
+          <div class="container">
+            <li class="sf-menu__item sf-menu__active">
+              <a href="index.html" class="sf-menu__item--link sf-menu__active--link">Главная</a>
+            </li>
+            <li class="sf-menu__item">
+              <a href="index-1.html" class="sf-menu__item--link">Услуги</a>
+              <ul class="submenu">
+                <li class="submenu__item container">
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a href="#" class="submenu__item--link">Услуги в центре</a>
+                    <ul class="sub-submenu">
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Логопеда</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Дефектора</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Логопедом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Дефектологом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Нейроскопическая коррекция</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a href="#" class="submenu__item--link">Услуги в центре</a>
+                    <ul class="sub-submenu">
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Логопеда</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Дефектора</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Логопедом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Дефектологом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Нейроскопическая коррекция</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a href="#" class="submenu__item--link">Услуги в центре</a>
+                     <ul class="sub-submenu">
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Логопеда</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Консультация Дефектора</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Логопедом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Занятие с Дефектологом</a>
+                      </li>
+                      <li class="sub-submenu__item">
+                        <a href="#" class="sub-submenu__item--link">Нейроскопическая коррекция</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <div class="sub-menu-cntbox">
+                      <a href="#" class="btn-2">Новости</a>
+                      <a href="#" class="post-link">План учебного <br> центра 2014-2015</a>
+                      <a href="#" class="post-link decor-link">Утвержден новый план научно-практических обучающих семинаров Б. А. Архипова на декабрь 2014 г.</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="sf-menu__item">
+              <a href="index-2.html" class="sf-menu__item--link">Проекты</a>
+            </li>
+            <li class="sf-menu__item">
+              <a href="index-3.html" class="sf-menu__item--link">Партнеры</a>
+            </li>
+            <li class="sf-menu__item">
+              <a href="index-4.html" class="sf-menu__item--link">Контакты</a>
+            </li>
+          </div>
+        </ul>
+    </nav>
+
+  </header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main class="main">
+    <section class="well well__06">
+      <div class="container">
+       <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 sm-hidden">
+            <aside class="sidebar">
+              <div class="service-box">
+                <div class="service-title">
+                  <h2>Услуги</h2>
+                </div>
+                <div class="service-cnt">
+                 <ul class="service-list">
+                  <li><a href="#">Прием профю Архипова Б.А</a></li>
+                    <li>
+                      <a href="#" class="current">Физиотерапевт</a>
+                      <ul class="sub-service">
+                        <li><a href="#">Консультация Физиотерапевта</a></li>
+                        <li><a href="#">Занятие с Физиотерапевтом</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Нейрофизиолог</a></li>
+                    <li><a href="#">Специалист</a></li>
+                    <li><a href="#">Невролог</a></li>
+                    <li><a href="#">Психолог</a></li>
+                    <li><a href="#">Психолог-игротерапевт</a></li>
+                    <li><a href="#">Нейропсихолог</a></li>
+                    <li><a href="#">Логопед.</a></li>
+                    <li><a href="#">Дефектолог</a></li>
+                    <li><a href="#">Остеопат</a></li>
+                    <li><a href="#">ЛФК-массаж</a></li>
+                    <li><a href="#">Рефлексотерапевт</a></li>
+                    <li><a href="#">Педиатр</a></li>
+                    <li><a href="#">Психотерапевт</a></li>
+                    <li><a href="#">УЗИ</a></li>
+                    <li><a href="#">Диетолог</a></li>
+                    <li><a href="#">Ортопед</a></li>
+                    <li><a href="#">Гомеопат</a></li>
+                    <li><a href="#">Фитотерапевт</a></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="about-service">
+              <h2 class="center">Физиотерапевт</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiuLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+              <a href="#" class="btn-2">показать еще</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 clearfix">
+            <div class="box-4">
+              <div class="box-4-aside center">
+                  <div class="aside-title">
+                    <h4>Новиков Алексей Владимирович</h4>
+                  </div>
+                  <div class="img">
+                    <img src="images/profesor.jpg" alt="img">
+                  </div>
+                  <div class="skills">
+                    <span>Врач-педиатор</span>
+                    <span>нейрофизиолог</span>
+                    <span>фитотерапевт</span>
+                  </div>
+                  <div class="info">
+                    <ul class="timetable">
+                      <li>Пн.</li>
+                      <li>Вт.</li>
+                      <li>Ср.</li>
+                      <li>Чт.</li>
+                      <li>Пт.</li>
+                      <li><a href="#">Расписание</a></li>
+                    </ul>
+                    <a href="#" class="btn-3">Записаться на прием</a>
+                  </div>
+                </div>
+              <div class="box-4-cnt">
+                <h2>Описание</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos quiratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="bg-primary">
+    <div class="container">
+        <div class="row center">
+          <div class="col-sm-12">
+            <p class="text-3">
+              Есть вопросы? Просто позвоните нам + 495 000 00 00
+            </p>
+          </div>
+      </div>
+  </section>
+  <section class="well__05">
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="foot-main">
+              <a href="#" class="btn-2">Больница</a>
+                <ul class="info">
+                  <li class="info-item"><a href="#">О клинике</a></li>
+                  <li class="info-item"><a href="#">Структура клиники</a></li>
+                  <li class="info-item"><a href="#">Вышестоящие организации</a></li>
+                  <li class="info-item"><a href="#">Обьявления</a></li>
+                  <li class="info-item"><a href="#">Медицинские новости</a></li>
+                  <li class="info-item"><a href="#">Вакансии</a></li>
+                  <li class="info-item"><a href="#">Лицензии</a></li>
+                  <li class="info-item"><a href="#">Фотогалерея</a></li>
+                  <li class="info-item"><a href="#">Блог</a></li>
+                  <li class="info-item"><a href="#">Форум</a></li>
+                  <li class="info-item"><a href="#">Законодательная карта</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="foot-main">
+              <a href="#" class="btn-2">Пациенту</a>
+                <ul class="info">
+                  <li class="info-item"><a href="#">Мои талоны</a></li>
+                  <li class="info-item"><a href="#">Корзина услуг</a></li>
+                  <li class="info-item"><a href="#">Заявление на закрепление</a></li>
+                  <li class="info-item"><a href="#">Запись на прием</a></li>
+                  <li class="info-item"><a href="#">Запись на госпитализацию</a></li>
+                  <li class="info-item"><a href="#">Видео-консультация врача</a></li>
+                  <li class="info-item"><a href="#">Страховые организации</a></li>
+                  <li class="info-item"><a href="#">Государственные программы</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="foot-main">
+              <a href="#" class="btn-2">Контакты</a>
+              <ul class="info">
+                <li class="info-item"><address>Адрес: г. Москва, </address></li>
+                <li class="info-item"><address>ул. Клары Цеткин  </address></li>
+                <li class="info-item"><address>д. 29 корп.1 </address></li>
+              </ul>
+              <ul class="info">
+                <li class="info-item"><a href="callto:" class="info-item_link text">+7 (495) 252-04-26</a></li>
+                <li class="info-item"><a href="callto:" class="info-item_link">+7 (925) 556-04-26</a></li>
+              </ul>
+              <ul class="info">
+                <li class="info-item">Режим работы: </li>
+                <li class="info-item">вт-сб с 11:00-18:00</li>
+                <li class="info-item">пн, вс: выходной</li>
+              </ul>
+              <a href="mailto:" class="homelink">noreplay@acaba.ru</a>
+            </div>
+          </div>
+
+          <p class="about center col-sm-12">© 1996-2016 Центр Б.А. Архипова “АКМЕ”</p>
+        </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="owl-carousel-2">
+            <div class="item">
+              <a href="#"><img src="images/carousel2-img.jpg" alt="img"></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="images/carousel2-img2.jpg" alt="img"></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="images/carousel2-img3.jpg" alt="img"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

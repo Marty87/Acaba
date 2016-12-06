@@ -1,0 +1,108 @@
+/*=================       Tabs     ======================*/
+.resp-tabs-list {
+  text-align: center;
+
+  li{
+
+    position: relative;
+    background: #fbfbfb;
+    padding: 10px 0;
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color:$secondary3;
+    font-size: 20px;
+    font-family: $font4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 9;
+    bottom:0;
+    @include transition(0.1s);
+
+  &:hover{
+
+    }
+  }
+
+  .resp-tab-active {
+    border: 1px solid $primary;
+    border-bottom: none;
+    bottom:-1px;
+    @include transition(0.3s);
+  }
+
+}
+
+.resp-tabs-container {
+  position: relative;
+  padding: 15px 0;
+  border: 1px solid $primary;
+  @include clearfix();
+  @include border-radius(10px);
+  z-index: 8;
+
+  .btn-2 {
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin:0 auto;
+    z-index: 9;
+
+    &:hover {
+        @include transition(0.3s);
+        background: $primary;
+        color:#fff;
+    }
+  }
+
+}
+
+.resp-accordion {
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+}
+
+.resp-tab-content-active {
+  display: block;
+}
+
+ @media (max-width: 575px) {
+   .resp-accordion {
+    text-align: center;
+     display: block;
+     cursor: pointer;
+     // margin: 10px 0 20px;
+     // border-bottom: 1px solid $primary;
+     @include transition(0.3s);
+     padding: 10px;
+
+     &:hover {
+      color:$primary;
+      @include transition(0.3s);
+     }
+   }
+
+   .resp-tabs-list {
+     display: none;
+   }
+ }
+
+.tabs-box {
+  margin: 15px 0;
+  text-align: center;
+
+  h5 {
+    margin-top: 15px;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+}
